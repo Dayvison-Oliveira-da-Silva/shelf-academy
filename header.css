@@ -1,0 +1,63 @@
+/* Estilo geral para o header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex; /* Usado para alinhar o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra no bottom */
+    z-index: 1000;
+    line-height: 1.5;
+    padding: 0 16px; /* Margem interna horizontal para o conteúdo */
+  }
+  header .insc{
+    align-items: right;
+    margin-left: auto;
+    margin-right: 10vw;
+    background-color: #0284f0;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 12px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+  }
+  header .insc:hover{
+    background-color: #023966;
+  }
+  
+  
+  /* Estilos para dispositivos menores (celular) */
+  @media (max-width: 768px) {
+    header {
+      height: 64px;
+    }
+  
+    header img {
+      height: 32px; /* Reduz o tamanho do logo em dispositivos menores */
+      margin-left: 10vw;
+    }
+  
+    main {
+      padding-top: 64px; /* Ajusta o espaçamento para o header menor */
+    }
+  }
+  
+  /* Estilos para dispositivos maiores (PC) */
+  @media (min-width: 769px) {
+    header {
+      height: 80px;
+    }
+  
+    header img {
+      height: 48px; /* Aumenta o tamanho do logo em dispositivos maiores */
+      margin-left: 10vw;
+    }
+  
+    main {
+      padding-top: 80px; /* Espaço para o header maior */
+    }
+  }
+  
