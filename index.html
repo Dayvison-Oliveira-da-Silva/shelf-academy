@@ -17,102 +17,186 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
     <style>
-        html,
-        body {
-            border: 0;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
+        @media (min-width: 769px) {
+
+            html,
+            body {
+                border: 0;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            main {
+                display: flex;
+            }
+
+            
+            #banner1 {
+                margin-top: 50px;
+                width: calc(100% - 30px);
+                margin-left: 30px;
+            }
+
+            .mini{
+                margin-top: 50px;
+                width: 45%;
+                margin-left: 2.24%;
+                margin-right: 2.24%;
+            }
+
+            #text-apresenta h1 {
+                font-size: 48px;
+                margin-left: 30px;
+                color: #121212;
+                font-family: 'montserrat', sans-serif;
+                font-weight: 500;
+            }
+
+            #text-apresenta h2 {
+                font-size: 16px;
+                margin-left: 30px;
+                color: #121212;
+                font-family: 'montserrat', sans-serif;
+                font-weight: 500;
+
+            }
+
+            #text-apresenta h3 {
+                font-size: 20px;
+                margin-left: 30px;
+                color: #121212;
+                font-family: 'montserrat', sans-serif;
+                font-weight: 500;
+
+            }
+
+            #text-apresenta h4 {
+                font-size: 16px;
+                margin-left: 45px;
+                color: #424242;
+                font-family: 'montserrat', sans-serif;
+                font-weight: 500;
+
+            }
+
+            #text-apresenta h5 {
+                font-size: 16px;
+                margin-left: 30px;
+                color: #121212;
+                font-family: 'montserrat', sans-serif;
+                font-weight: 500;
+
+            }
+
+            #mini3 {
+                margin-top: 20px;
+                margin-left: 30px;
+                width: calc(100% - 30px);
+            }
+
+            footer {
+                background-image: linear-gradient(90deg, #0284f0, #025aa3);
+            }
+
+            main img {
+                transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+                /* Adicionando transição */
+            }
+
+            main img:hover {
+                transform: scale(1.1);
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 15px;
+            }
+
+            #text-apresenta {
+                width: 59.7602650872vw;
+            }
+
+            #banners {
+                width: 40.2397349128vw;
+            }
         }
+        @media (max-width: 768px) {
+            html,
+            body {
+                border: 0;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+            .mini{
+                width: 45%;
+                margin: 2.24%;
+            }
+            #banners{
+                margin: 2.24%;
+            }
+            #banner1{
+                width: 100%;
+            }
+            #mini3{
+                width: 100%;
+            }
+            #text-apresenta h1 {
+                font-size: 30px;
+                margin-left: 30px;
+                color: #121212;
+                font-family: 'montserrat', sans-serif;
+                font-weight: 500;
+            }
 
-        main {
-            display: flex;
-        }
+            #text-apresenta h2 {
+                font-size: 16px;
+                margin-left: 30px;
+                color: #121212;
+                font-family: 'montserrat', sans-serif;
+                font-weight: 500;
 
-        #banner1 {
-            height: 100vh;
-            margin-left: 30px;
-            margin-top: 50px;
-        }
+            }
 
-        .mini {
-            margin-top: 50px;
-            width: 45%;
-            margin-left: 30px;
-        }
+            #text-apresenta h3 {
+                font-size: 20px;
+                margin-left: 30px;
+                color: #121212;
+                font-family: 'montserrat', sans-serif;
+                font-weight: 500;
 
-        #text-apresenta h1 {
-            font-size: 48px;
-            margin-left: 30px;
-            color: #121212;
-            font-family: 'montserrat', sans-serif;
-            font-weight: 500;
-        }
+            }
 
-        #text-apresenta h2 {
-            font-size: 16px;
-            margin-left: 30px;
-            color: #121212;
-            font-family: 'montserrat', sans-serif;
-            font-weight: 500;
+            #text-apresenta h4 {
+                font-size: 16px;
+                margin-left: 45px;
+                color: #424242;
+                font-family: 'montserrat', sans-serif;
+                font-weight: 500;
 
-        }
+            }
 
-        #text-apresenta h3 {
-            font-size: 20px;
-            margin-left: 30px;
-            color: #121212;
-            font-family: 'montserrat', sans-serif;
-            font-weight: 500;
+            #text-apresenta h5 {
+                font-size: 16px;
+                margin-left: 30px;
+                color: #121212;
+                font-family: 'montserrat', sans-serif;
+                font-weight: 500;
 
-        }
+            }
+            main img {
+                transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+                /* Adicionando transição */
+            }
 
-        #text-apresenta h4 {
-            font-size: 16px;
-            margin-left: 45px;
-            color: #424242;
-            font-family: 'montserrat', sans-serif;
-            font-weight: 500;
-
-        }
-
-        #text-apresenta h5 {
-            font-size: 16px;
-            margin-left: 30px;
-            color: #121212;
-            font-family: 'montserrat', sans-serif;
-            font-weight: 500;
-
-        }
-
-        #text-apresenta {
-            width: 59.76%;
-        }
-
-        #banners {
-            width: 40.24%;
-        }
-
-        #mini3 {
-            margin-top: 20px;
-            margin-left: 30px;
-            width: calc(100% - 30px);
-        }
-
-        footer {
-            background-image: linear-gradient(90deg, #0284f0, #025aa3);
-        }
-
-        main img {
-            transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
-            /* Adicionando transição */
-        }
-
-        main img:hover {
-            transform: scale(1.1);
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            border-radius: 15px;
+            main img:hover {
+                transform: scale(1.1);
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                border-radius: 15px;
+            }
+            footer {
+                background-image: linear-gradient(90deg, #0284f0, #025aa3);
+            }
         }
     </style>
 </head>
@@ -120,7 +204,7 @@
 <body>
     <header>
         <a href="index.html"><img src="img/logo.png" alt="logo empresa"></a>
-        <a class="insc" href="#">Inscreva-se</a>
+        <a class="insc" href="cadastro-login.html">Inscreva-se</a>
     </header>
     <main>
         <div id="text-apresenta">

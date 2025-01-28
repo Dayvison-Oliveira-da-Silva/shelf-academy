@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelf Academy</title>
+    <link rel="shortcut icon" href="img/shorticon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        @media (max-width: 768px) {
+
+            html,
+            body {
+                border: 0;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+                background-image: url(img/fundo.jpg);
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            header {
+                background-color: transparent;
+                height: 30vh;
+                width: 100%;
+                display: inline-block;
+                align-items: center;
+                justify-content: center;
+            }
+
+
+            main {
+                background-color: white;
+                height: 70vh;
+                width: 100%;
+                border-top-left-radius: 100px;
+            }
+
+            header img {
+                height: 60%;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                margin-left: 50%;
+                margin-top: 15vh;
+                transform: translate(-50%, -50%);
+                box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+            }
+
+            main {
+                background-color: white;
+                height: 70vh;
+                width: 100%;
+                border-top-left-radius: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            main h1 {
+                margin-top: 50px;
+                font-size: 36px;
+                color: #121212;
+                font-family: 'Inter', sans-serif;
+                font-weight: 300;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                width: 100%;
+                max-width: 300px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                padding: 15px;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+
+            label {
+                font-size: 14PX;
+                color: #121212;
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                margin-right: auto;
+            }
+
+            #cpf {
+                width: 90%;
+                margin-right: auto;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                font-family: 'Inter', sans-serif;
+            }
+
+            #cpf:focus {
+                border-color: transparent;
+                outline: none;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 1rem;
+                color: white;
+                background-color: #0284f0;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                font-family: 'Inter', sans-serif;
+                width: 100%;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            button:hover {
+                background-color: #026bb0;
+            }
+        }
+
+        @media (min-width: 769px) {
+
+            html,
+            body {
+                border: 0;
+                margin: 0;
+                padding: 0;
+                height: 90vh;
+                background-color: #efefef;
+            }
+
+            #fundopc {
+                margin-top: 0;
+                background-image: url(img/fundopc.png);
+                clip-path: polygon(0% 0%, 70vw 0vh, 65vw 100vh, 0vw 100vh);
+                height: 100vh;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                top: 0;
+                z-index: 0;
+            }
+
+            #logo-pc {
+                position: absolute;
+                margin:0;
+                top: 3%;
+                left: 3%;
+                z-index: 2;
+            }
+            #logo-pc img{
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                width: 7vw;
+                box-shadow: rgb(255, 255, 255) 0px 7px 29px 0px;
+            }
+
+            main {
+                background-color: white;
+                width: 70vw;
+                height: 85vh;
+                position: absolute;
+                z-index: 1;
+                border-radius: 15px;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                border: 7px solid white;
+                display: flex;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            #transp {
+                background-image: url(img/fundopc.png);
+                background-size: 100vw 105vh;
+                height: 100%;
+                width: 55%;
+                clip-path: polygon(0% 0%, 100% 0%, 93% 100%, 0% 100%);
+                border-radius: 15px;
+
+            }
+            #log-pc{
+                background-color: white;
+                width: 50%;
+                justify-items: center;
+            }
+            /**/
+            main h1 {
+                margin-top: 50px;
+                font-size: 36px;
+                color: #121212;
+                font-family: 'Inter', sans-serif;
+                font-weight: 300;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                width: 100%;
+                max-width: 300px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                padding: 15px;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+
+            label {
+                font-size: 14PX;
+                color: #121212;
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                margin-right: auto;
+            }
+
+            #cpf {
+                width: 90%;
+                margin-right: auto;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                font-family: 'Inter', sans-serif;
+            }
+
+            #cpf:focus {
+                border-color: transparent;
+                outline: none;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 1rem;
+                color: white;
+                background-color: #0284f0;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                font-family: 'Inter', sans-serif;
+                width: 100%;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            button:hover {
+                background-color: #026bb0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a id="logo-pc" href="index.html"><img src="img/logo-login.png" alt="Logo Shelf Academy"></a>
+    </header>
+    <div id="fundopc"></div>
+    <main>
+        <div id="transp"></div>
+        <div id="log-pc">
+            <h1>Olá, visitante</h1>
+            <form action="#" method="POST">
+                <label for="cpf">Digite seu CPF:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+                <button type="submit">confirmar</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
