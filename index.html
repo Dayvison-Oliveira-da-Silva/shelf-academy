@@ -33,16 +33,16 @@
                 display: flex;
             }
 
-            
+
             #banner1 {
                 margin-top: 50px;
                 width: calc(100% - 30px);
                 margin-left: 30px;
             }
 
-            .mini{
+            .mini {
                 margin-top: 50px;
-                width: 44%;
+                width: 45%;
                 margin-left: 2.24%;
                 margin-right: 2.24%;
             }
@@ -120,7 +120,9 @@
                 width: 40.2397349128vw;
             }
         }
+
         @media (max-width: 768px) {
+
             html,
             body {
                 border: 0;
@@ -128,19 +130,27 @@
                 padding: 0;
                 overflow-x: hidden;
             }
-            .mini{
-                width: 45%;
+            #minis{
+                margin-top: 10px;
+                display: flex;
+            }
+            .mini {
+                width: 95%;
                 margin: 2.24%;
             }
-            #banners{
+
+            #banners {
                 margin: 2.24%;
             }
-            #banner1{
+
+            #banner1 {
                 width: 100%;
             }
-            #mini3{
+
+            #mini3 {
                 width: 100%;
             }
+
             #text-apresenta h1 {
                 font-size: 30px;
                 margin-left: 30px;
@@ -184,6 +194,7 @@
                 font-weight: 500;
 
             }
+
             main img {
                 transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
                 /* Adicionando transição */
@@ -194,6 +205,7 @@
                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 border-radius: 15px;
             }
+
             footer {
                 background-image: linear-gradient(90deg, #0284f0, #025aa3);
             }
@@ -208,10 +220,12 @@
     </header>
     <main>
         <div id="text-apresenta">
-            <a href="https://www.sympla.com.br/evento/shelf-academy-dra-luciana-hands-on-aumento-de-coroa-clinica/2790009?share_id=copiarlink"
-                target="_blank"><img class="mini" src="img/mini1.png" alt=""></a>
-            <a href="https://www.sympla.com.br/evento/shelf-academy-ayrton-lima-como-escrever-um-projeto-de-iniciacao-cientifica/2811204?share_id=copiarlink"
-                target="_blank"><img class="mini" src="img/mini2.png" alt=""></a>
+            <div id="minis">
+                <a href="https://www.sympla.com.br/evento/shelf-academy-dra-luciana-hands-on-aumento-de-coroa-clinica/2790009?share_id=copiarlink"
+                    target="_blank"><img class="mini" src="img/mini1.png" alt=""></a>
+                <a href="https://www.sympla.com.br/evento/shelf-academy-ayrton-lima-como-escrever-um-projeto-de-iniciacao-cientifica/2811204?share_id=copiarlink"
+                    target="_blank"><img class="mini" src="img/mini2.png" alt=""></a>
+            </div>
             <h1> Brilhe Sem Limites com a Shelf Academy!</h1>
             <h2> A sua jornada acadêmica merece um impulso extra, e é isso que a Shelf Academy oferece! </h2>
             <br>
