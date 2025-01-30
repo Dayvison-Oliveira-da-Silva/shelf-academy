@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/shorticon.png">
+    <link rel="stylesheet" href="header.css">
+    <title>Carterinha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            flex-direction: column;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .carterinha {
+            width: 85.60mm;
+            height: 53.98mm;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .carterinha-header {
+            margin-top: 7.5%;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+            margin-bottom: 10px;
+            height: 27%;
+            width: 100%;
+            background-image: url('img/card/Faixa.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+        }
+
+        .carterinha-header img:nth-child(2) {
+            height: 80%;
+        }
+
+        .carterinha-header img:nth-child(1),
+        .carterinha-header img:nth-child(3) {
+            height: 50%;
+        }
+
+        .info {
+            font-size: 12px;
+            color: #424242;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .foto {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 40%;
+        }
+
+        .foto {
+            height: 65%;
+        }
+
+        .foto img {
+            width: 70%;
+        }
+
+        .foto p {
+            margin-top: 0;
+            font-size: 8px;
+            color: #121212;
+            text-align: center;
+        }
+
+        .info form {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+
+        .info input {
+            margin-bottom: 3px;
+            font-size: 14px;
+            border: none;
+            color: #121212;
+            font-family: "Poppins", serif;
+        }
+
+        .info input:focus {
+            border-color: transparent;
+            outline: none;
+            color: #424242;
+        }
+
+        .info label {
+            font-size: 12px;
+            margin-bottom: -2px;
+            font-weight: bold;
+            color: #424242;
+        }
+
+        .barcode {
+            margin: -5%;
+            height: auto;
+            text-align: center;
+            margin-right: auto;
+        }
+
+        #nome {
+            font-size: 24px;
+            font-weight: 800;
+            color: #2e2ec8;
+            
+        }
+
+        #back {
+            margin-top: 15px;
+           
+            width: 85.60mm;
+            height: 53.98mm;
+            background-image: url(img/card/MODELO.png);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
+            position: relative;
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @media print {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgb(221, 221, 221);
+        margin: 0;
+        padding: 0;
+    }
+    .carterinha, #back {
+        page-break-after: always;
+        page-break-before: avoid;
+        box-shadow: none;
+        width: 85.60mm;
+        height: 53.98mm;
+        margin: auto;
+        border: none;
+    }
+    header, footer, .nao-imprimir { 
+        display: none; 
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="logo empresa"></a>
+
+    </header>
+    <div class="carterinha">
+        <div class="carterinha-header">
+            <img src="img/card/LOGO BRANCA.png" alt="">
+            <img src="img/card/LOGO SHELF ACADEMY BRANCA.png" alt="">
+            <img src="img/card/LOGO BRANCA.png" alt="">
+        </div>
+
+        <div class="info">
+            <div class="foto">
+                <img src="img/card/qrcode.png" alt="">
+                <p>Escaneia e participe<br>de nosso grupo</p>
+            </div>
+            <form action="">
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                <label for="id">ID</label>
+                <input type="text" id="id" name="id" placeholder="Será Gerado automaticamente">
+                <div class="barcode">
+                    <canvas id="barcode"></canvas> <!-- Onde o código de barras será gerado -->
+                </div>
+            </form>
+        </div>
+        
+
+    </div>
+    <div id="back">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+    <script>
+        const dados = JSON.parse(localStorage.getItem('dados'));
+    
+        if (dados) {
+            console.log(dados); // Verifique os dados no console
+    
+            document.getElementById('nome').value = dados.nome;
+            let cpfCnpj = dados.cpfCnpj;
+    
+            // Faz a requisição ao servidor proxy para obter o ID a partir do CPF/CNPJ
+            fetch("https://api-exjgq3hsra-uc.a.run.app/proxy", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ cpf: cpfCnpj })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.retorno && data.retorno.status === "OK") {
+                    let id = data.retorno.contatos[0].contato.id;
+                    document.getElementById('id').value = id;
+    
+                    // Gera o código de barras com o ID
+                    JsBarcode("#barcode", id, {
+                        background: "transparent",
+                        format: "CODE128",
+                        lineColor: "#424242",
+                        width: 1.5,
+                        height: 25,
+                        displayValue: false
+                    });
+                } else {
+                    console.error("Erro ao obter ID:", data);
+                    alert("Erro ao buscar ID. Verifique os dados.");
+                }
+            })
+            .catch(error => {
+                console.error("Erro na requisição:", error);
+                alert("Erro ao conectar com o servidor.");
+            });
+    
+        } else {
+            alert("Não foi possível recuperar os dados do cliente.");
+            console.log('Dados não encontrados ou formato incorreto.');
+        }
+    </script>
+    
+    
+</body>
+
+</html>
